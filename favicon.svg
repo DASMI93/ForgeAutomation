@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="forgeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F97316" />
+      <stop offset="100%" stop-color="#EA580C" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="32" height="32" rx="6" fill="#020617" />
+  <!-- Border -->
+  <rect x="0.5" y="0.5" width="31" height="31" rx="5.5" fill="none" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+  <!-- Stylized F and Bracket -->
+  <path d="M9 8h14v3H12v6h10v3H12v6H9V8z" fill="url(#forgeGradient)" />
+  <path d="M20 14h3v8h-3v-8z" fill="#FFFFFF" opacity="0.9" />
+  <circle cx="21.5" cy="22.5" r="1.5" fill="#F97316" />
+</svg>
