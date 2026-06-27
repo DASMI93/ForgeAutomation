@@ -289,29 +289,6 @@ document.addEventListener('DOMContentLoaded', () => {
     statsObserver.observe(statsSection);
   }
 
-  // --- CASE STUDIES TAB HANDLING ---
-  const caseTabs = document.querySelectorAll('.case-tab');
-  const casePanels = document.querySelectorAll('.case-panel');
-
-  caseTabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      const targetPanel = tab.getAttribute('data-tab');
-      
-      // Update active tabs
-      caseTabs.forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
-
-      // Swap active panels
-      casePanels.forEach(panel => {
-        if (panel.getAttribute('id') === targetPanel) {
-          panel.classList.add('active');
-        } else {
-          panel.classList.remove('active');
-        }
-      });
-    });
-  });
-
   // --- FAQ ACCORDION TOGGLE ---
   const faqItems = document.querySelectorAll('.faq-item');
   faqItems.forEach(item => {
